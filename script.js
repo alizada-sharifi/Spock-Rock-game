@@ -99,7 +99,7 @@ function displayComputerChoice() {
 function updateScores(playerChoice) {
   if (playerChoice === computerChoice) {
     resultText.textContent = "It's a tie";
-    resultText.style.color = "#2196F3";
+    resultText.style.color = "#8fa3d1";
     stopConfetti();
     removeConfetti();
   } else {
