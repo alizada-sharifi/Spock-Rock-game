@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spock Rock Game</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body class="m-0 d-flex justify-content-center align-items-center">
+    <div class="game-container bg-white rounded-2">
+      <div class="header d-flex justify-content-center align-items-center py-1">
+        <h1 class="text-white fs-2">Rock Paper Scissors Lizard Spock</h1>
+      </div>
+      <div class="player-container" id="player">
+        <h2 class="mb-2">
+          You - <span id="playerScore"></span>
+          <span class="choice" id="playerChoice"></span>
+        </h2>
+        <div class="icons d-flex justify-content-between">
+          <i
+            class="fa-regular fa-hand-rock"
+            title="Rock"
+            id="playerRock"
+            onclick="select('rock')"
+          ></i>
+          <i
+            class="fa-regular fa-hand-paper"
+            title="paper"
+            id="playerPaper"
+            onclick="select('paper')"
+          ></i>
+          <i
+            class="fa-regular fa-hand-scissors"
+            title="scissors"
+            id="playerScissors"
+            onclick="select('scissors')"
+          ></i>
+          <i
+            class="fa-regular fa-hand-lizard"
+            title="lizard"
+            id="playerLizard"
+            onclick="select('lizard')"
+          ></i>
+          <i
+            class="fa-regular fa-hand-spock"
+            title="spock"
+            id="playerSpock"
+            onclick="select('spock')"
+          ></i>
+        </div>
+      </div>
+      <!-- ============= computer container ================= -->
+      <div class="player-container" id="computer">
+        <h2 class="mb-2">
+          Computer - <span id="computerScore"></span
+          ><span class="choice" id="computerChoice"></span>
+        </h2>
+        <div class="icons d-flex justify-content-between">
+          <i class="fa-regular fa-hand-rock" title="Rock" id="computerRock"></i>
+          <i
+            class="fa-regular fa-hand-paper"
+            title="paper"
+            id="computerPaper"
+          ></i>
+          <i
+            class="fa-regular fa-hand-scissors"
+            title="scissors"
+            id="computerScissors"
+          ></i>
+          <i
+            class="fa-regular fa-hand-lizard"
+            title="lizard"
+            id="computerLizard"
+          ></i>
+          <i
+            class="fa-regular fa-hand-spock"
+            title="spock"
+            id="computerSpock"
+          ></i>
+        </div>
+      </div>
+      <!-- ========== reset icon -->
+      <i class="fa-solid fa-sync-alt reset-icon" title="Reset"></i>
+      <!-- ============ result container -->
+      <div class="result-container d-flex justify-content-center align-items-center">
+        <h3 class="result-text" id="resultText"></h3>
+      </div>
+    </div>
+    <!-- ================ js section ============= -->
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
