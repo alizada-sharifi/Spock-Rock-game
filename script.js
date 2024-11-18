@@ -16,6 +16,7 @@ const computerPaper = document.querySelector("#computerPaper");
 const computerLizard = document.querySelector("#computerLizard");
 const computerSpock = document.querySelector("#computerSpock");
 const allGameIcons = document.querySelectorAll(".fa-regular");
+const music = new Audio("sound.mp3");
 let computerChoice = "";
 let playerScoreNumber = 0;
 let computerScoreNumber = 0;
@@ -29,6 +30,7 @@ const choices = {
 };
 // =============================== function for player choice
 function select(playerChoice) {
+  music.play();
   checkResult(playerChoice);
   switch (playerChoice) {
     case "rock":
